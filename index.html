@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Ustawienie systemu znaków i nadanie tytułu stronie -->
+    <meta charset="utf-8">
+    <title>Szlak kajakowy Pilicy</title>
+
+    <!-- Dostosowanie widoku strony do urządzeń mobilnych-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Dołączenie czcionki z zewnątrz (DIN Pro Bold)-->
+    <link href="https://fonts.cdnfonts.com/css/dinpro-bold" rel="stylesheet">
+
+    <!-- Dołączenie Mapbox CSS i biblioteki Mapbox JavaScript-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+
+    <!-- Dołączenie własnego CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header" >
+        <h1>PRZEBIEG SZLAKU KAJAKOWEGO PILICY NA TRASIE SMARDZEWICE-GAPININ</h1>
+    </div>
+
+    <div id="legend-container">
+        <div><strong>Legenda</strong></div>
+        <div id="legend">
+        </div>
+    </div>
+
+    <div id="checkbox-container">
+        <label><input type="checkbox" id="bystrzaCheckbox" checked>Bystrza pod mostami</label>
+        <label><input type="checkbox" id="przenoskiCheckbox" checked>Przenoski</label>
+        <label><input type="checkbox" id="miejscaCheckbox" checked>Miejsca wodowania</label>
+        <label><input type="checkbox" id="mostyCheckbox" checked>Mosty</label>
+        <label><input type="checkbox" id="rzekiCheckbox" checked>Ujścia rzek</label>
+        <label><input type="checkbox" id="atrakcjeCheckbox" checked>Atrakcje</label>
+        <label><input type="checkbox" id="lachyCheckbox" checked>Łachy</label>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Dołączenie własnego skryptu JavaScript, dającego funkcjonalność mapie-->
+    <script src = "script.js"></script>
+        
+</body>
+
+</html>
