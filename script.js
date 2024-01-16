@@ -13,7 +13,7 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/wbudzisz/clovk9w7c00tw01nz79u5amkk',
     center: [20.162544, 51.519379],
     zoom: 11,
-//    maxBounds: bounds
+    maxBounds: bounds
 });
 
 //Dodanie możliwości zczytywania lokalizacji na urządzeniu
